@@ -41,4 +41,9 @@ public class IndexController {
         model.addAttribute("post", dto);
         return "posts-update";
     }
+
+    @GetMapping("/posts/test")
+    public String postsRead() {
+        return "posts-test";
+    }
 }
